@@ -1,0 +1,28 @@
+# VCS
+.git
+.gitignore
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Frontend deps & build artefacts (rebuilt inside the image)
+frontend/node_modules/
+frontend/dist/
+
+# The SPA is rebuilt inside the image; never copy a stale local build.
+backend/static/
+
+# Secrets & local config
+.env
+.env.example
+
+# Misc
+*.log
+.DS_Store
+README.md
+assistant.md
+run.sh
